@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.box{
+			background: #EBCB4E;
+			height: 400px;
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.v{
+			background: blue;
+			height: 90px;
+			width: 400px;
+			margin-top: 20px;
+		}
+		.h{
+			text-align: center;
+			font-family: Arial;
+		}
+		.img{
+			height: 330px;
+			width: 330px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="box quest-1">
+			<h1 class="h">Когда был глобальный релиз?</h1>
+			<div style="display: flex;">
+				<div style="margin-left: auto; margin-right: auto;">
+					<div class="quest-1-v1 v">
+						<h1 class="h">2018</h1>
+					</div>
+					<div class="quest-1-v2 v">
+						<h1 class="h">2017</h1>
+					</div>
+					<div class="quest-1-v3 v">
+						<h1 class="h">2020</h1>
+					</div>
+				</div>
+				<img src="morgen.jpg" class="img">
+			</div>
+		</div>
+		<div class="box quest-2">
+			<h1 class="h">Какие легендарки были до релиза</h1>
+			<div style="display: flex;">
+				<div style="margin-left: auto; margin-right: auto;">
+					<div class="quest-2-v1 v">
+						<h1 class="h">Леон и Спайк</h1>
+					</div>
+					<div class="quest-2-v2 v">
+						<h1 class="h">Леон и Ворон</h1>
+					</div>
+					<div class="quest-2-v3 v">
+						<h1 class="h">Спайк и Ворон</h1>
+					</div>
+				</div>
+				<img src="da.jpg" class="img">
+			</div>
+		</div>
+		<div class="box quest-3">
+			<h1 class="h">Какого пола Нани?</h1>
+			<div style="display: flex;">
+				<div style="margin-left: auto; margin-right: auto;">
+					<div class="quest-3-v1 v">
+						<h1 class="h">Нету пола, это же робот</h1>
+					</div>
+					<div class="quest-3-v2 v">
+						<h1 class="h">Мужского</h1>
+					</div>
+					<div class="quest-3-v3 v">
+						<h1 class="h">Женского</h1>
+					</div>
+				</div>
+				<img src="putin.jfif" class="img">
+			</div>
+		</div>
+		<div class="box complete">
+			<h1 class="h">Ты прошёл тест, поздравляю</h1>
+			<img src="el-primo.jpg" class="img">
+			<img src="che.jfif" class="img">
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.querySelector(".quest-2").style.display = "none";
+		document.querySelector(".quest-3").style.display = "none";
+		document.querySelector(".complete").style.display = "none";
+		document.querySelector(".quest-1-v1").onclick = function(){
+			alert("Правильно, молодец!")
+			document.querySelector(".quest-1").style.display = "none"
+			document.querySelector(".quest-2").style.display = ""
+		}
+		document.querySelector(".quest-1-v2").onclick = function(){
+			alert("Неправильно, попробуй ещё раз!")
+		}
+		document.querySelector(".quest-1-v3").onclick = function(){
+			alert("Неправильно, попробуй ещё раз!")
+		}
+		document.querySelector(".quest-2-v3").onclick = function(){
+			alert("Правильно, молодец!")
+			document.querySelector(".quest-2").style.display = "none"
+			document.querySelector(".quest-3").style.display = ""
+		}
+		document.querySelector(".quest-2-v1").onclick = function(){
+			alert("Неправильно, попробуй ещё раз!")
+		}
+		document.querySelector(".quest-2-v2").onclick = function(){
+			alert("Неправильно, попробуй ещё раз!")
+		}
+		document.querySelector(".quest-3-v3").onclick = function(){
+			alert("Правильно, молодец!")
+			document.querySelector(".quest-3").style.display = "none"
+			document.querySelector(".complete").style.display = ""
+		}
+		document.querySelector(".quest-3-v1").onclick = function(){
+			alert("Неправильно, попробуй ещё раз!")
+		}
+		document.querySelector(".quest-3-v2").onclick = function(){
+			alert("Неправильно, попробуй ещё раз!")
+		}
+	</script>
+</body>
+</html>
